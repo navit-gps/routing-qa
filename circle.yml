@@ -12,6 +12,7 @@ dependencies:
     - wget -c -O ~/maps/europe-poland.bin https://circle-artifacts.com/gh/navit-gps/maptool/130/artifacts/0/tmp/circle-artifacts.CeXtgnB/europe-poland.bin
     - wget -c -O ~/maps/europe-spain.bin https://circle-artifacts.com/gh/navit-gps/maptool/137/artifacts/0/tmp/circle-artifacts.9IO1Oha/europe-spain.bin
     - wget -c -O ~/maps/europe-switzerland.bin https://circle-artifacts.com/gh/navit-gps/maptool/139/artifacts/0/tmp/circle-artifacts.FHBlHGk/europe-switzerland.bin
+    - sudo apt-get update > /dev/null 2> /dev/null
     - sudo apt-get install cmake
     - sudo apt-get install libpng12-dev 
   #  - sudo apt-get install libgtk2.0-dev 
