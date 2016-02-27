@@ -42,7 +42,7 @@ export_suffix=sys.argv[3]
 tests=[]
 
 with open(gpx_directory+"/test.md", "w") as f:
-    f.write("# Tests results")
+    f.write("# Tests results\n")
 
 for filename in glob.glob('*.yaml'):
     f = open(filename)
@@ -55,7 +55,7 @@ for filename in glob.glob('*.yaml'):
     print "http://www.google.com/maps/dir/"+str(dataMap['from']['lat']) + "," + str(dataMap['from']['lng']) +"/"+str(dataMap['to']['lat']) + ","+ str(dataMap['to']['lng'])
     
     with open(gpx_directory+"/test.md", "a") as f:
-        f.write("## Test %s" % filename)
+        f.write("## Test %s\n" % filename)
 
     start_time = time.time()
     try:
