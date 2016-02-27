@@ -82,3 +82,12 @@ test:
     - python test.py $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS "imperial"
     - dbus-send  --print-reply --session --dest=org.navit_project.navit /org/navit_project/navit/default_navit org.navit_project.navit.navit.quit
 
+deployment:
+  publish_tests_results:
+    branch: master
+    owner: navit-gps
+    commands:
+      - git checkout -b gh-pages
+      - cp $CIRCLE_ARTIFACTS/test.md index.md
+      - git add index.md
+      - git push
