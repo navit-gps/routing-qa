@@ -41,7 +41,7 @@ export_suffix=sys.argv[3]
 
 tests=[]
 
-with open(gpx_directory+"test.md", "w") as f:
+with open(gpx_directory+"/test.md", "w") as f:
     f.write("# Tests results")
 
 for filename in glob.glob('*.yaml'):
@@ -54,7 +54,7 @@ for filename in glob.glob('*.yaml'):
     print "https://graphhopper.com/maps/?point="+str(dataMap['from']['lat']) + "%2C" + str(dataMap['from']['lng']) +"&point="+str(dataMap['to']['lat']) + "%2C"+ str(dataMap['to']['lng'])
     print "http://www.google.com/maps/dir/"+str(dataMap['from']['lat']) + "," + str(dataMap['from']['lng']) +"/"+str(dataMap['to']['lat']) + ","+ str(dataMap['to']['lng'])
     
-    with open(gpx_directory+"test.md", "a") as f:
+    with open(gpx_directory+"/test.md", "a") as f:
         f.write("## Test %s" % filename)
 
     start_time = time.time()
