@@ -84,7 +84,7 @@ test:
 
 deployment:
   publish_tests_results:
-    branch: master
+    branch: gh-tests
     owner: navit-gps
     commands:
       - git checkout -b gh-pages
