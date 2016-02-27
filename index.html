@@ -1,0 +1,836 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Routing-qa by navit-gps</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/navit-gps/routing-qa">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/navit-gps/routing-qa/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/navit-gps/routing-qa/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Routing-qa</h1>
+          <p>Scripts and route segments to run QA tests</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/navit-gps">navit-gps</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="testing-001yaml--378022897-1222983341-to-378430707-1222973899" class="anchor" href="#testing-001yaml--378022897-1222983341-to-378430707-1222973899" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing 001.yaml : 37.8022897,-122.2983341 to 37.8430707,-122.2973899</h1>
+
+<p><a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8022897%2C-122.2983341%3B37.8430707%2C-122.2973899">Compare with OpenStreetMaps</a>
+<a href="https://graphhopper.com/maps/?point=37.8022897%2C-122.2983341&amp;point=37.8430707%2C-122.2973899">https://graphhopper.com/maps/?point=37.8022897%2C-122.2983341&amp;point=37.8430707%2C-122.2973899</a>
+<a href="http://www.google.com/maps/dir/37.8022897,-122.2983341/37.8430707,-122.2973899">http://www.google.com/maps/dir/37.8022897,-122.2983341/37.8430707,-122.2973899</a>
+<code>Route status : 17, distance : 5326, duration : 10.2378640175</code>
+navigation items count mismatch [ got 0.0, expected &gt;1</p>
+
+<h2>
+<a id="testing-002_missing_destination_nameyaml--378383918-1222955611-to-37841315-1222970095" class="anchor" href="#testing-002_missing_destination_nameyaml--378383918-1222955611-to-37841315-1222970095" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing 002_missing_destination_name.yaml : 37.8383918,-122.2955611 to 37.841315,-122.2970095</h2>
+
+<p><a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8383918%2C-122.2955611%3B37.841315%2C-122.2970095">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8383918%2C-122.2955611%3B37.841315%2C-122.2970095</a>
+<a href="https://graphhopper.com/maps/?point=37.8383918%2C-122.2955611&amp;point=37.841315%2C-122.2970095">https://graphhopper.com/maps/?point=37.8383918%2C-122.2955611&amp;point=37.841315%2C-122.2970095</a>
+<a href="http://www.google.com/maps/dir/37.8383918,-122.2955611/37.841315,-122.2970095">http://www.google.com/maps/dir/37.8383918,-122.2955611/37.841315,-122.2970095</a>
+    Route status : 17, distance : 408, duration : 2.06340003014
+    navigation items count mismatch [ got 0.0, expected &lt;0</p>
+
+<p>Testing 003_highway_entrance.yaml : 38.6062298,-122.8691086 to 38.5996633,-122.8621565
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=38.6062298%2C-122.8691086%3B38.5996633%2C-122.8621565">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=38.6062298%2C-122.8691086%3B38.5996633%2C-122.8621565</a>
+<a href="https://graphhopper.com/maps/?point=38.6062298%2C-122.8691086&amp;point=38.5996633%2C-122.8621565">https://graphhopper.com/maps/?point=38.6062298%2C-122.8691086&amp;point=38.5996633%2C-122.8621565</a>
+<a href="http://www.google.com/maps/dir/38.6062298,-122.8691086/38.5996633,-122.8621565">http://www.google.com/maps/dir/38.6062298,-122.8691086/38.5996633,-122.8621565</a></p>
+
+<blockquote>
+<p>Route status : 17, distance : 1031, duration : 1.30702614784
+navigation items count mismatch [ got 0.0, expected &lt;0</p>
+</blockquote>
+
+<p>Testing 004_turn_restriction.yaml : 37.8373038,-122.293106 to 37.8371386,-122.2926929
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8373038%2C-122.293106%3B37.8371386%2C-122.2926929">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8373038%2C-122.293106%3B37.8371386%2C-122.2926929</a>
+<a href="https://graphhopper.com/maps/?point=37.8373038%2C-122.293106&amp;point=37.8371386%2C-122.2926929">https://graphhopper.com/maps/?point=37.8373038%2C-122.293106&amp;point=37.8371386%2C-122.2926929</a>
+<a href="http://www.google.com/maps/dir/37.8373038,-122.293106/37.8371386,-122.2926929">http://www.google.com/maps/dir/37.8373038,-122.293106/37.8371386,-122.2926929</a>
+Route status : 17, distance : 51, duration : 1.23482298851
+dbus result mismatch [ got 51&gt;60</p>
+
+<p>Testing 005_car_forbidden_traffic.yaml : 37.8528526,-122.2867921 to 37.8531152,-122.2863414
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8528526%2C-122.2867921%3B37.8531152%2C-122.2863414">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8528526%2C-122.2867921%3B37.8531152%2C-122.2863414</a>
+<a href="https://graphhopper.com/maps/?point=37.8528526%2C-122.2867921&amp;point=37.8531152%2C-122.2863414">https://graphhopper.com/maps/?point=37.8528526%2C-122.2867921&amp;point=37.8531152%2C-122.2863414</a>
+<a href="http://www.google.com/maps/dir/37.8528526,-122.2867921/37.8531152,-122.2863414">http://www.google.com/maps/dir/37.8528526,-122.2867921/37.8531152,-122.2863414</a>
+Route status : 17, distance : 632, duration : 1.3489151001
+navigation items count mismatch [ got 0.0, expected &lt;0</p>
+
+<p>Testing A92.yaml : 48.5364928,12.1517654 to 48.2266316,11.4676387
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.5364928%2C12.1517654%3B48.2266316%2C11.4676387">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.5364928%2C12.1517654%3B48.2266316%2C11.4676387</a>
+<a href="https://graphhopper.com/maps/?point=48.5364928%2C12.1517654&amp;point=48.2266316%2C11.4676387">https://graphhopper.com/maps/?point=48.5364928%2C12.1517654&amp;point=48.2266316%2C11.4676387</a>
+<a href="http://www.google.com/maps/dir/48.5364928,12.1517654/48.2266316,11.4676387">http://www.google.com/maps/dir/48.5364928,12.1517654/48.2266316,11.4676387</a>
+Route status : 17, distance : 70729, duration : 1.47066903114
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Aalter_left.yaml : 51.0740589,3.4562561 to 51.0759766,3.4473245
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.0759766%2C3.4473245">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.0759766%2C3.4473245</a>
+<a href="https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.0759766%2C3.4473245">https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.0759766%2C3.4473245</a>
+<a href="http://www.google.com/maps/dir/51.0740589,3.4562561/51.0759766,3.4473245">http://www.google.com/maps/dir/51.0740589,3.4562561/51.0759766,3.4473245</a>
+Route status : 17, distance : 811, duration : 3.16887688637
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Aalter_right.yaml : 51.0740589,3.4562561 to 51.0777988,3.4497076
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.0777988%2C3.4497076">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.0777988%2C3.4497076</a>
+<a href="https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.0777988%2C3.4497076">https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.0777988%2C3.4497076</a>
+<a href="http://www.google.com/maps/dir/51.0740589,3.4562561/51.0777988,3.4497076">http://www.google.com/maps/dir/51.0740589,3.4562561/51.0777988,3.4497076</a>
+Route status : 17, distance : 657, duration : 1.42060303688
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Aalter_sharp_left.yaml : 51.0740589,3.4562561 to 51.073972,3.4507689
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.073972%2C3.4507689">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.073972%2C3.4507689</a>
+<a href="https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.073972%2C3.4507689">https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.073972%2C3.4507689</a>
+<a href="http://www.google.com/maps/dir/51.0740589,3.4562561/51.073972,3.4507689">http://www.google.com/maps/dir/51.0740589,3.4562561/51.073972,3.4507689</a>
+Route status : 17, distance : 1022, duration : 1.41659498215
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Aalter_straight.yaml : 51.0740589,3.4562561 to 51.0809038,3.4452393
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.0809038%2C3.4452393">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.0809038%2C3.4452393</a>
+<a href="https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.0809038%2C3.4452393">https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.0809038%2C3.4452393</a>
+<a href="http://www.google.com/maps/dir/51.0740589,3.4562561/51.0809038,3.4452393">http://www.google.com/maps/dir/51.0740589,3.4562561/51.0809038,3.4452393</a>
+Route status : 17, distance : 1119, duration : 1.41408896446
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Aalter_turnaround.yaml : 51.0740589,3.4562561 to 51.075398,3.4527975
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.075398%2C3.4527975">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0740589%2C3.4562561%3B51.075398%2C3.4527975</a>
+<a href="https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.075398%2C3.4527975">https://graphhopper.com/maps/?point=51.0740589%2C3.4562561&amp;point=51.075398%2C3.4527975</a>
+<a href="http://www.google.com/maps/dir/51.0740589,3.4562561/51.075398,3.4527975">http://www.google.com/maps/dir/51.0740589,3.4562561/51.075398,3.4527975</a>
+Route status : 17, distance : 990, duration : 1.47588706017
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Ammerseestr.yaml : 48.1217347,11.5026473 to 48.1237784,11.484457
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1217347%2C11.5026473%3B48.1237784%2C11.484457">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1217347%2C11.5026473%3B48.1237784%2C11.484457</a>
+<a href="https://graphhopper.com/maps/?point=48.1217347%2C11.5026473&amp;point=48.1237784%2C11.484457">https://graphhopper.com/maps/?point=48.1217347%2C11.5026473&amp;point=48.1237784%2C11.484457</a>
+<a href="http://www.google.com/maps/dir/48.1217347,11.5026473/48.1237784,11.484457">http://www.google.com/maps/dir/48.1217347,11.5026473/48.1237784,11.484457</a>
+Route status : 17, distance : 1893, duration : 1.44442200661
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Andeer.yaml : 46.4626607,9.1923326 to 46.6022237,9.4267816
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.6022237%2C9.4267816">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.6022237%2C9.4267816</a>
+<a href="https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.6022237%2C9.4267816">https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.6022237%2C9.4267816</a>
+<a href="http://www.google.com/maps/dir/46.4626607,9.1923326/46.6022237,9.4267816">http://www.google.com/maps/dir/46.4626607,9.1923326/46.6022237,9.4267816</a>
+Route status : 17, distance : 32920, duration : 1.67785215378
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Arbedo_Castione.yaml : 46.3163555,9.1977032 to 46.2130041,9.0428477
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.3163555%2C9.1977032%3B46.2130041%2C9.0428477">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.3163555%2C9.1977032%3B46.2130041%2C9.0428477</a>
+<a href="https://graphhopper.com/maps/?point=46.3163555%2C9.1977032&amp;point=46.2130041%2C9.0428477">https://graphhopper.com/maps/?point=46.3163555%2C9.1977032&amp;point=46.2130041%2C9.0428477</a>
+<a href="http://www.google.com/maps/dir/46.3163555,9.1977032/46.2130041,9.0428477">http://www.google.com/maps/dir/46.3163555,9.1977032/46.2130041,9.0428477</a>
+Route status : 17, distance : 20004, duration : 1.7469830513
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Ausserferrera.yaml : 46.4626607,9.1923326 to 46.556617,9.4393332
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.556617%2C9.4393332">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.556617%2C9.4393332</a>
+<a href="https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.556617%2C9.4393332">https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.556617%2C9.4393332</a>
+<a href="http://www.google.com/maps/dir/46.4626607,9.1923326/46.556617,9.4393332">http://www.google.com/maps/dir/46.4626607,9.1923326/46.556617,9.4393332</a>
+Route status : 17, distance : 32441, duration : 1.8204228878
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing B2R_E.yaml : 48.1073781,11.579841 to 48.1046773,11.5869507
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1073781%2C11.579841%3B48.1046773%2C11.5869507">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1073781%2C11.579841%3B48.1046773%2C11.5869507</a>
+<a href="https://graphhopper.com/maps/?point=48.1073781%2C11.579841&amp;point=48.1046773%2C11.5869507">https://graphhopper.com/maps/?point=48.1073781%2C11.579841&amp;point=48.1046773%2C11.5869507</a>
+<a href="http://www.google.com/maps/dir/48.1073781,11.579841/48.1046773,11.5869507">http://www.google.com/maps/dir/48.1073781,11.579841/48.1046773,11.5869507</a>
+Route status : 17, distance : 732, duration : 1.77788710594
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing B2R_W.yaml : 48.107829,11.5798342 to 48.1119554,11.5730886
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.107829%2C11.5798342%3B48.1119554%2C11.5730886">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.107829%2C11.5798342%3B48.1119554%2C11.5730886</a>
+<a href="https://graphhopper.com/maps/?point=48.107829%2C11.5798342&amp;point=48.1119554%2C11.5730886">https://graphhopper.com/maps/?point=48.107829%2C11.5798342&amp;point=48.1119554%2C11.5730886</a>
+<a href="http://www.google.com/maps/dir/48.107829,11.5798342/48.1119554,11.5730886">http://www.google.com/maps/dir/48.107829,11.5798342/48.1119554,11.5730886</a>
+Route status : 17, distance : 751, duration : 1.53947710991
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Boulevard_Peripherique_1.yaml : 48.8185294,2.3696602 to 48.7980766,2.3438369
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.8185294%2C2.3696602%3B48.7980766%2C2.3438369">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.8185294%2C2.3696602%3B48.7980766%2C2.3438369</a>
+<a href="https://graphhopper.com/maps/?point=48.8185294%2C2.3696602&amp;point=48.7980766%2C2.3438369">https://graphhopper.com/maps/?point=48.8185294%2C2.3696602&amp;point=48.7980766%2C2.3438369</a>
+<a href="http://www.google.com/maps/dir/48.8185294,2.3696602/48.7980766,2.3438369">http://www.google.com/maps/dir/48.8185294,2.3696602/48.7980766,2.3438369</a>
+Route status : 17, distance : 3354, duration : 1.58573007584
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Boulevard_Peripherique_2.yaml : 48.8212938,2.378107 to 48.8180301,2.3681935
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.8212938%2C2.378107%3B48.8180301%2C2.3681935">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.8212938%2C2.378107%3B48.8180301%2C2.3681935</a>
+<a href="https://graphhopper.com/maps/?point=48.8212938%2C2.378107&amp;point=48.8180301%2C2.3681935">https://graphhopper.com/maps/?point=48.8212938%2C2.378107&amp;point=48.8180301%2C2.3681935</a>
+<a href="http://www.google.com/maps/dir/48.8212938,2.378107/48.8180301,2.3681935">http://www.google.com/maps/dir/48.8212938,2.378107/48.8180301,2.3681935</a>
+Route status : 17, distance : 808, duration : 2.41873979568
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Brugge.yaml : 51.1386845,3.2515552 to 51.1720398,3.2098421
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.1386845%2C3.2515552%3B51.1720398%2C3.2098421">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.1386845%2C3.2515552%3B51.1720398%2C3.2098421</a>
+<a href="https://graphhopper.com/maps/?point=51.1386845%2C3.2515552&amp;point=51.1720398%2C3.2098421">https://graphhopper.com/maps/?point=51.1386845%2C3.2515552&amp;point=51.1720398%2C3.2098421</a>
+<a href="http://www.google.com/maps/dir/51.1386845,3.2515552/51.1720398,3.2098421">http://www.google.com/maps/dir/51.1386845,3.2515552/51.1720398,3.2098421</a>
+Route status : 17, distance : 5295, duration : 1.52834796906
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Brussels_turn_restriction.yaml : 50.849699,4.372265 to 50.850022,4.371804
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.849699%2C4.372265%3B50.850022%2C4.371804">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.849699%2C4.372265%3B50.850022%2C4.371804</a>
+<a href="https://graphhopper.com/maps/?point=50.849699%2C4.372265&amp;point=50.850022%2C4.371804">https://graphhopper.com/maps/?point=50.849699%2C4.372265&amp;point=50.850022%2C4.371804</a>
+<a href="http://www.google.com/maps/dir/50.849699,4.372265/50.850022,4.371804">http://www.google.com/maps/dir/50.849699,4.372265/50.850022,4.371804</a>
+No route found, last status : 3, duration : 50.8863720894
+dbus result mismatch [ got 3==33</p>
+
+<p>Testing Daerstetten_Nyon.yaml : 46.6587903,7.495226 to 46.383953,6.2382762
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.6587903%2C7.495226%3B46.383953%2C6.2382762">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.6587903%2C7.495226%3B46.383953%2C6.2382762</a>
+<a href="https://graphhopper.com/maps/?point=46.6587903%2C7.495226&amp;point=46.383953%2C6.2382762">https://graphhopper.com/maps/?point=46.6587903%2C7.495226&amp;point=46.383953%2C6.2382762</a>
+<a href="http://www.google.com/maps/dir/46.6587903,7.495226/46.383953,6.2382762">http://www.google.com/maps/dir/46.6587903,7.495226/46.383953,6.2382762</a>
+Route status : 17, distance : 185759, duration : 8.84109807014
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Effnerplatz.yaml : 48.1550317,11.6165189 to 48.1547549,11.6170732
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1550317%2C11.6165189%3B48.1547549%2C11.6170732">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1550317%2C11.6165189%3B48.1547549%2C11.6170732</a>
+<a href="https://graphhopper.com/maps/?point=48.1550317%2C11.6165189&amp;point=48.1547549%2C11.6170732">https://graphhopper.com/maps/?point=48.1550317%2C11.6165189&amp;point=48.1547549%2C11.6170732</a>
+<a href="http://www.google.com/maps/dir/48.1550317,11.6165189/48.1547549,11.6170732">http://www.google.com/maps/dir/48.1550317,11.6165189/48.1547549,11.6170732</a>
+Route status : 17, distance : 292, duration : 3.59697413445
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Ehrwald.yaml : 47.4828025,11.0399926 to 47.406412,10.9167358
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.4828025%2C11.0399926%3B47.406412%2C10.9167358">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.4828025%2C11.0399926%3B47.406412%2C10.9167358</a>
+<a href="https://graphhopper.com/maps/?point=47.4828025%2C11.0399926&amp;point=47.406412%2C10.9167358">https://graphhopper.com/maps/?point=47.4828025%2C11.0399926&amp;point=47.406412%2C10.9167358</a>
+<a href="http://www.google.com/maps/dir/47.4828025,11.0399926/47.406412,10.9167358">http://www.google.com/maps/dir/47.4828025,11.0399926/47.406412,10.9167358</a>
+Route status : 17, distance : 17026, duration : 1.50913596153
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Emeryville.yaml : 37.8439930619,-122.293717981 to 37.8233168235,-122.264723853
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8439930619%2C-122.293717981%3B37.8233168235%2C-122.264723853">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8439930619%2C-122.293717981%3B37.8233168235%2C-122.264723853</a>
+<a href="https://graphhopper.com/maps/?point=37.8439930619%2C-122.293717981&amp;point=37.8233168235%2C-122.264723853">https://graphhopper.com/maps/?point=37.8439930619%2C-122.293717981&amp;point=37.8233168235%2C-122.264723853</a>
+<a href="http://www.google.com/maps/dir/37.8439930619,-122.293717981/37.8233168235,-122.264723853">http://www.google.com/maps/dir/37.8439930619,-122.293717981/37.8233168235,-122.264723853</a>
+Route status : 17, distance : 6710, duration : 1.88155698776
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Emmeloord_N.yaml : 52.6831133,5.7416967 to 52.7201317,5.7716005
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.6831133%2C5.7416967%3B52.7201317%2C5.7716005">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.6831133%2C5.7416967%3B52.7201317%2C5.7716005</a>
+<a href="https://graphhopper.com/maps/?point=52.6831133%2C5.7416967&amp;point=52.7201317%2C5.7716005">https://graphhopper.com/maps/?point=52.6831133%2C5.7416967&amp;point=52.7201317%2C5.7716005</a>
+<a href="http://www.google.com/maps/dir/52.6831133,5.7416967/52.7201317,5.7716005">http://www.google.com/maps/dir/52.6831133,5.7416967/52.7201317,5.7716005</a>
+Route status : 17, distance : 5890, duration : 1.63964486122
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Emmeloord_S.yaml : 52.6831133,5.7416967 to 52.6416616,5.8136431
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.6831133%2C5.7416967%3B52.6416616%2C5.8136431">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.6831133%2C5.7416967%3B52.6416616%2C5.8136431</a>
+<a href="https://graphhopper.com/maps/?point=52.6831133%2C5.7416967&amp;point=52.6416616%2C5.8136431">https://graphhopper.com/maps/?point=52.6831133%2C5.7416967&amp;point=52.6416616%2C5.8136431</a>
+<a href="http://www.google.com/maps/dir/52.6831133,5.7416967/52.6416616,5.8136431">http://www.google.com/maps/dir/52.6831133,5.7416967/52.6416616,5.8136431</a>
+Route status : 17, distance : 8578, duration : 1.99760389328
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Eschenlohe.yaml : 48.0129575,11.4173773 to 47.5870372,11.1746427
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.0129575%2C11.4173773%3B47.5870372%2C11.1746427">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.0129575%2C11.4173773%3B47.5870372%2C11.1746427</a>
+<a href="https://graphhopper.com/maps/?point=48.0129575%2C11.4173773&amp;point=47.5870372%2C11.1746427">https://graphhopper.com/maps/?point=48.0129575%2C11.4173773&amp;point=47.5870372%2C11.1746427</a>
+<a href="http://www.google.com/maps/dir/48.0129575,11.4173773/47.5870372,11.1746427">http://www.google.com/maps/dir/48.0129575,11.4173773/47.5870372,11.1746427</a>
+Route status : 17, distance : 55515, duration : 2.4607629776
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Eschenried.yaml : 48.1217347,11.5026473 to 48.1995844,11.4097391
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1217347%2C11.5026473%3B48.1995844%2C11.4097391">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1217347%2C11.5026473%3B48.1995844%2C11.4097391</a>
+<a href="https://graphhopper.com/maps/?point=48.1217347%2C11.5026473&amp;point=48.1995844%2C11.4097391">https://graphhopper.com/maps/?point=48.1217347%2C11.5026473&amp;point=48.1995844%2C11.4097391</a>
+<a href="http://www.google.com/maps/dir/48.1217347,11.5026473/48.1995844,11.4097391">http://www.google.com/maps/dir/48.1217347,11.5026473/48.1995844,11.4097391</a>
+Route status : 17, distance : 12997, duration : 3.53553199768
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Fremont_drive_bypass.yaml : 38.2346558,-122.4609068 to 38.2367289,-122.4599412
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=38.2346558%2C-122.4609068%3B38.2367289%2C-122.4599412">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=38.2346558%2C-122.4609068%3B38.2367289%2C-122.4599412</a>
+<a href="https://graphhopper.com/maps/?point=38.2346558%2C-122.4609068&amp;point=38.2367289%2C-122.4599412">https://graphhopper.com/maps/?point=38.2346558%2C-122.4609068&amp;point=38.2367289%2C-122.4599412</a>
+<a href="http://www.google.com/maps/dir/38.2346558,-122.4609068/38.2367289,-122.4599412">http://www.google.com/maps/dir/38.2346558,-122.4609068/38.2367289,-122.4599412</a>
+Route status : 17, distance : 335, duration : 6.91277003288</p>
+
+<p>Testing Garmisch_straight.yaml : 47.5053893,11.1036204 to 47.5589938,11.1382746
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.5053893%2C11.1036204%3B47.5589938%2C11.1382746">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.5053893%2C11.1036204%3B47.5589938%2C11.1382746</a>
+<a href="https://graphhopper.com/maps/?point=47.5053893%2C11.1036204&amp;point=47.5589938%2C11.1382746">https://graphhopper.com/maps/?point=47.5053893%2C11.1036204&amp;point=47.5589938%2C11.1382746</a>
+<a href="http://www.google.com/maps/dir/47.5053893,11.1036204/47.5589938,11.1382746">http://www.google.com/maps/dir/47.5053893,11.1036204/47.5589938,11.1382746</a>
+Route status : 17, distance : 7246, duration : 1.22473406792
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Girona_Lloret.yaml : 41.9840182,2.8207616 to 41.7015779,2.8426393
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=41.9840182%2C2.8207616%3B41.7015779%2C2.8426393">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=41.9840182%2C2.8207616%3B41.7015779%2C2.8426393</a>
+<a href="https://graphhopper.com/maps/?point=41.9840182%2C2.8207616&amp;point=41.7015779%2C2.8426393">https://graphhopper.com/maps/?point=41.9840182%2C2.8207616&amp;point=41.7015779%2C2.8426393</a>
+<a href="http://www.google.com/maps/dir/41.9840182,2.8207616/41.7015779,2.8426393">http://www.google.com/maps/dir/41.9840182,2.8207616/41.7015779,2.8426393</a>
+Route status : 17, distance : 38310, duration : 2.31095218658
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Girona_Tossa.yaml : 41.9840182,2.8207616 to 41.7204919,2.928948
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=41.9840182%2C2.8207616%3B41.7204919%2C2.928948">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=41.9840182%2C2.8207616%3B41.7204919%2C2.928948</a>
+<a href="https://graphhopper.com/maps/?point=41.9840182%2C2.8207616&amp;point=41.7204919%2C2.928948">https://graphhopper.com/maps/?point=41.9840182%2C2.8207616&amp;point=41.7204919%2C2.928948</a>
+<a href="http://www.google.com/maps/dir/41.9840182,2.8207616/41.7204919,2.928948">http://www.google.com/maps/dir/41.9840182,2.8207616/41.7204919,2.928948</a>
+Route status : 17, distance : 38809, duration : 2.59658908844
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Hamburg_Sued_N.yaml : 53.50826,10.07306 to 53.5205165,10.0262508
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=53.50826%2C10.07306%3B53.5205165%2C10.0262508">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=53.50826%2C10.07306%3B53.5205165%2C10.0262508</a>
+<a href="https://graphhopper.com/maps/?point=53.50826%2C10.07306&amp;point=53.5205165%2C10.0262508">https://graphhopper.com/maps/?point=53.50826%2C10.07306&amp;point=53.5205165%2C10.0262508</a>
+<a href="http://www.google.com/maps/dir/53.50826,10.07306/53.5205165,10.0262508">http://www.google.com/maps/dir/53.50826,10.07306/53.5205165,10.0262508</a>
+Route status : 17, distance : 6135, duration : 2.26910114288
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Hamburg_Sued_S.yaml : 53.50826,10.07306 to 53.49825,10.03743
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=53.50826%2C10.07306%3B53.49825%2C10.03743">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=53.50826%2C10.07306%3B53.49825%2C10.03743</a>
+<a href="https://graphhopper.com/maps/?point=53.50826%2C10.07306&amp;point=53.49825%2C10.03743">https://graphhopper.com/maps/?point=53.50826%2C10.07306&amp;point=53.49825%2C10.03743</a>
+<a href="http://www.google.com/maps/dir/53.50826,10.07306/53.49825,10.03743">http://www.google.com/maps/dir/53.50826,10.07306/53.49825,10.03743</a>
+Route status : 17, distance : 3766, duration : 1.87069106102
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Ichostrasse_S.yaml : 48.1158902,11.5797705 to 48.1147486,11.5766389
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1158902%2C11.5797705%3B48.1147486%2C11.5766389">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1158902%2C11.5797705%3B48.1147486%2C11.5766389</a>
+<a href="https://graphhopper.com/maps/?point=48.1158902%2C11.5797705&amp;point=48.1147486%2C11.5766389">https://graphhopper.com/maps/?point=48.1158902%2C11.5797705&amp;point=48.1147486%2C11.5766389</a>
+<a href="http://www.google.com/maps/dir/48.1158902,11.5797705/48.1147486,11.5766389">http://www.google.com/maps/dir/48.1158902,11.5797705/48.1147486,11.5766389</a>
+Route status : 17, distance : 334, duration : 1.37035107613
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Ichostrasse_SE.yaml : 48.1158902,11.5797705 to 48.1154427,11.5784323
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1158902%2C11.5797705%3B48.1154427%2C11.5784323">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1158902%2C11.5797705%3B48.1154427%2C11.5784323</a>
+<a href="https://graphhopper.com/maps/?point=48.1158902%2C11.5797705&amp;point=48.1154427%2C11.5784323">https://graphhopper.com/maps/?point=48.1158902%2C11.5797705&amp;point=48.1154427%2C11.5784323</a>
+<a href="http://www.google.com/maps/dir/48.1158902,11.5797705/48.1154427,11.5784323">http://www.google.com/maps/dir/48.1158902,11.5797705/48.1154427,11.5784323</a>
+Route status : 17, distance : 287, duration : 1.43517994881
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Imst_A12_E.yaml : 47.2227609,10.7519953 to 47.237412,10.8440223
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.2227609%2C10.7519953%3B47.237412%2C10.8440223">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.2227609%2C10.7519953%3B47.237412%2C10.8440223</a>
+<a href="https://graphhopper.com/maps/?point=47.2227609%2C10.7519953&amp;point=47.237412%2C10.8440223">https://graphhopper.com/maps/?point=47.2227609%2C10.7519953&amp;point=47.237412%2C10.8440223</a>
+<a href="http://www.google.com/maps/dir/47.2227609,10.7519953/47.237412,10.8440223">http://www.google.com/maps/dir/47.2227609,10.7519953/47.237412,10.8440223</a>
+Route status : 17, distance : 8789, duration : 1.49369716644
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Imst_A12_W.yaml : 47.2227609,10.7519953 to 47.1673728,10.5872366
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.2227609%2C10.7519953%3B47.1673728%2C10.5872366">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.2227609%2C10.7519953%3B47.1673728%2C10.5872366</a>
+<a href="https://graphhopper.com/maps/?point=47.2227609%2C10.7519953&amp;point=47.1673728%2C10.5872366">https://graphhopper.com/maps/?point=47.2227609%2C10.7519953&amp;point=47.1673728%2C10.5872366</a>
+<a href="http://www.google.com/maps/dir/47.2227609,10.7519953/47.1673728,10.5872366">http://www.google.com/maps/dir/47.2227609,10.7519953/47.1673728,10.5872366</a>
+Route status : 17, distance : 14885, duration : 2.28319406509
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Imst_B171.yaml : 47.2298023,10.7452466 to 47.2261087,10.7485459
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.2298023%2C10.7452466%3B47.2261087%2C10.7485459">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.2298023%2C10.7452466%3B47.2261087%2C10.7485459</a>
+<a href="https://graphhopper.com/maps/?point=47.2298023%2C10.7452466&amp;point=47.2261087%2C10.7485459">https://graphhopper.com/maps/?point=47.2298023%2C10.7452466&amp;point=47.2261087%2C10.7485459</a>
+<a href="http://www.google.com/maps/dir/47.2298023,10.7452466/47.2261087,10.7485459">http://www.google.com/maps/dir/47.2298023,10.7452466/47.2261087,10.7485459</a>
+Route status : 17, distance : 494, duration : 2.21943593025
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Kruishoutem.yaml : 50.9148007,3.4905054 to 50.9187998,3.5010574
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9148007%2C3.4905054%3B50.9187998%2C3.5010574">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9148007%2C3.4905054%3B50.9187998%2C3.5010574</a>
+<a href="https://graphhopper.com/maps/?point=50.9148007%2C3.4905054&amp;point=50.9187998%2C3.5010574">https://graphhopper.com/maps/?point=50.9148007%2C3.4905054&amp;point=50.9187998%2C3.5010574</a>
+<a href="http://www.google.com/maps/dir/50.9148007,3.4905054/50.9187998,3.5010574">http://www.google.com/maps/dir/50.9148007,3.4905054/50.9187998,3.5010574</a>
+Route status : 17, distance : 1930, duration : 1.38746500015
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing LaisvesPr_left.yaml : 54.6700242,25.2319015 to 54.6708375,25.2023902
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6700242%2C25.2319015%3B54.6708375%2C25.2023902">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6700242%2C25.2319015%3B54.6708375%2C25.2023902</a>
+<a href="https://graphhopper.com/maps/?point=54.6700242%2C25.2319015&amp;point=54.6708375%2C25.2023902">https://graphhopper.com/maps/?point=54.6700242%2C25.2319015&amp;point=54.6708375%2C25.2023902</a>
+<a href="http://www.google.com/maps/dir/54.6700242,25.2319015/54.6708375,25.2023902">http://www.google.com/maps/dir/54.6700242,25.2319015/54.6708375,25.2023902</a>
+Route status : 17, distance : 1953, duration : 1.41523098946
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing LaisvesPr_right.yaml : 54.6700242,25.2319015 to 54.6732973,25.22343
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6700242%2C25.2319015%3B54.6732973%2C25.22343">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6700242%2C25.2319015%3B54.6732973%2C25.22343</a>
+<a href="https://graphhopper.com/maps/?point=54.6700242%2C25.2319015&amp;point=54.6732973%2C25.22343">https://graphhopper.com/maps/?point=54.6700242%2C25.2319015&amp;point=54.6732973%2C25.22343</a>
+<a href="http://www.google.com/maps/dir/54.6700242,25.2319015/54.6732973,25.22343">http://www.google.com/maps/dir/54.6700242,25.2319015/54.6732973,25.22343</a>
+Route status : 17, distance : 681, duration : 1.35118317604
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Langwieder_See.yaml : 48.1648526,11.457781 to 48.1983823,11.4120844
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1648526%2C11.457781%3B48.1983823%2C11.4120844">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1648526%2C11.457781%3B48.1983823%2C11.4120844</a>
+<a href="https://graphhopper.com/maps/?point=48.1648526%2C11.457781&amp;point=48.1983823%2C11.4120844">https://graphhopper.com/maps/?point=48.1648526%2C11.457781&amp;point=48.1983823%2C11.4120844</a>
+<a href="http://www.google.com/maps/dir/48.1648526,11.457781/48.1983823,11.4120844">http://www.google.com/maps/dir/48.1648526,11.457781/48.1983823,11.4120844</a>
+Route status : 17, distance : 5261, duration : 1.23601579666
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Lostallo.yaml : 46.1952327,9.0291322 to 46.3163555,9.1977032
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.1952327%2C9.0291322%3B46.3163555%2C9.1977032">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.1952327%2C9.0291322%3B46.3163555%2C9.1977032</a>
+<a href="https://graphhopper.com/maps/?point=46.1952327%2C9.0291322&amp;point=46.3163555%2C9.1977032">https://graphhopper.com/maps/?point=46.1952327%2C9.0291322&amp;point=46.3163555%2C9.1977032</a>
+<a href="http://www.google.com/maps/dir/46.1952327,9.0291322/46.3163555,9.1977032">http://www.google.com/maps/dir/46.1952327,9.0291322/46.3163555,9.1977032</a>
+Route status : 17, distance : 21883, duration : 2.55806016922
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Lucca_left.yaml : 43.8412217,10.4947132 to 43.8389593,10.4974559
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=43.8412217%2C10.4947132%3B43.8389593%2C10.4974559">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=43.8412217%2C10.4947132%3B43.8389593%2C10.4974559</a>
+<a href="https://graphhopper.com/maps/?point=43.8412217%2C10.4947132&amp;point=43.8389593%2C10.4974559">https://graphhopper.com/maps/?point=43.8412217%2C10.4947132&amp;point=43.8389593%2C10.4974559</a>
+<a href="http://www.google.com/maps/dir/43.8412217,10.4947132/43.8389593,10.4974559">http://www.google.com/maps/dir/43.8412217,10.4947132/43.8389593,10.4974559</a>
+Route status : 17, distance : 394, duration : 1.80871009827
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Lucca_straight.yaml : 43.8379873,10.4951033 to 43.8412217,10.4947132
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=43.8379873%2C10.4951033%3B43.8412217%2C10.4947132">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=43.8379873%2C10.4951033%3B43.8412217%2C10.4947132</a>
+<a href="https://graphhopper.com/maps/?point=43.8379873%2C10.4951033&amp;point=43.8412217%2C10.4947132">https://graphhopper.com/maps/?point=43.8379873%2C10.4951033&amp;point=43.8412217%2C10.4947132</a>
+<a href="http://www.google.com/maps/dir/43.8379873,10.4951033/43.8412217,10.4947132">http://www.google.com/maps/dir/43.8379873,10.4951033/43.8412217,10.4947132</a>
+Route status : 17, distance : 374, duration : 1.26722383499
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Medels.yaml : 46.4626607,9.1923326 to 46.5483953,9.2966653
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.5483953%2C9.2966653">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.5483953%2C9.2966653</a>
+<a href="https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.5483953%2C9.2966653">https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.5483953%2C9.2966653</a>
+<a href="http://www.google.com/maps/dir/46.4626607,9.1923326/46.5483953,9.2966653">http://www.google.com/maps/dir/46.4626607,9.1923326/46.5483953,9.2966653</a>
+Route status : 17, distance : 17640, duration : 1.24873614311
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Merelbeke_Exit.yaml : 50.9722231734,3.82982045839 to 51.0051887103,3.77896219973
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9722231734%2C3.82982045839%3B51.0051887103%2C3.77896219973">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9722231734%2C3.82982045839%3B51.0051887103%2C3.77896219973</a>
+<a href="https://graphhopper.com/maps/?point=50.9722231734%2C3.82982045839&amp;point=51.0051887103%2C3.77896219973">https://graphhopper.com/maps/?point=50.9722231734%2C3.82982045839&amp;point=51.0051887103%2C3.77896219973</a>
+<a href="http://www.google.com/maps/dir/50.9722231734,3.82982045839/51.0051887103,3.77896219973">http://www.google.com/maps/dir/50.9722231734,3.82982045839/51.0051887103,3.77896219973</a>
+Route status : 17, distance : 6704, duration : 1.50327801704
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Merelbeke_R4.yaml : 50.9722231734,3.82982045839 to 51.0109949744,3.75147366586
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9722231734%2C3.82982045839%3B51.0109949744%2C3.75147366586">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9722231734%2C3.82982045839%3B51.0109949744%2C3.75147366586</a>
+<a href="https://graphhopper.com/maps/?point=50.9722231734%2C3.82982045839&amp;point=51.0109949744%2C3.75147366586">https://graphhopper.com/maps/?point=50.9722231734%2C3.82982045839&amp;point=51.0109949744%2C3.75147366586</a>
+<a href="http://www.google.com/maps/dir/50.9722231734,3.82982045839/51.0109949744,3.75147366586">http://www.google.com/maps/dir/50.9722231734,3.82982045839/51.0109949744,3.75147366586</a>
+Route status : 17, distance : 8706, duration : 2.05183291435
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Midpines_broken_route.yaml : 37.831791,-122.285998 to 37.738737,-119.576024
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.831791%2C-122.285998%3B37.738737%2C-119.576024">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.831791%2C-122.285998%3B37.738737%2C-119.576024</a>
+<a href="https://graphhopper.com/maps/?point=37.831791%2C-122.285998&amp;point=37.738737%2C-119.576024">https://graphhopper.com/maps/?point=37.831791%2C-122.285998&amp;point=37.738737%2C-119.576024</a>
+<a href="http://www.google.com/maps/dir/37.831791,-122.285998/37.738737,-119.576024">http://www.google.com/maps/dir/37.831791,-122.285998/37.738737,-119.576024</a>
+No route found, last status : 3, duration : 51.1736369133
+dbus result mismatch [ got 3==33</p>
+
+<p>Testing Milan_Munich.yaml : 45.4909606,9.1453845 to 48.1268249,11.5219952
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=45.4909606%2C9.1453845%3B48.1268249%2C11.5219952">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=45.4909606%2C9.1453845%3B48.1268249%2C11.5219952</a>
+<a href="https://graphhopper.com/maps/?point=45.4909606%2C9.1453845&amp;point=48.1268249%2C11.5219952">https://graphhopper.com/maps/?point=45.4909606%2C9.1453845&amp;point=48.1268249%2C11.5219952</a>
+<a href="http://www.google.com/maps/dir/45.4909606,9.1453845/48.1268249,11.5219952">http://www.google.com/maps/dir/45.4909606,9.1453845/48.1268249,11.5219952</a>
+Route status : 17, distance : 582661, duration : 3.18059492111
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Milan_Orelle.yaml : 45.4909606,9.1453845 to 45.2073609,6.544235
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=45.4909606%2C9.1453845%3B45.2073609%2C6.544235">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=45.4909606%2C9.1453845%3B45.2073609%2C6.544235</a>
+<a href="https://graphhopper.com/maps/?point=45.4909606%2C9.1453845&amp;point=45.2073609%2C6.544235">https://graphhopper.com/maps/?point=45.4909606%2C9.1453845&amp;point=45.2073609%2C6.544235</a>
+<a href="http://www.google.com/maps/dir/45.4909606,9.1453845/45.2073609,6.544235">http://www.google.com/maps/dir/45.4909606,9.1453845/45.2073609,6.544235</a>
+Route status : 17, distance : 244134, duration : 4.73620510101
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Munich_Neuschwanstein.yaml : 48.1268249,11.5219952 to 47.5546258,10.7359319
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1268249%2C11.5219952%3B47.5546258%2C10.7359319">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1268249%2C11.5219952%3B47.5546258%2C10.7359319</a>
+<a href="https://graphhopper.com/maps/?point=48.1268249%2C11.5219952&amp;point=47.5546258%2C10.7359319">https://graphhopper.com/maps/?point=48.1268249%2C11.5219952&amp;point=47.5546258%2C10.7359319</a>
+<a href="http://www.google.com/maps/dir/48.1268249,11.5219952/47.5546258,10.7359319">http://www.google.com/maps/dir/48.1268249,11.5219952/47.5546258,10.7359319</a>
+Route status : 17, distance : 188752, duration : 4.20670890808
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Munich_StAnton.yaml : 48.1268249,11.5219952 to 47.1307314,10.2663241
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1268249%2C11.5219952%3B47.1307314%2C10.2663241">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1268249%2C11.5219952%3B47.1307314%2C10.2663241</a>
+<a href="https://graphhopper.com/maps/?point=48.1268249%2C11.5219952&amp;point=47.1307314%2C10.2663241">https://graphhopper.com/maps/?point=48.1268249%2C11.5219952&amp;point=47.1307314%2C10.2663241</a>
+<a href="http://www.google.com/maps/dir/48.1268249,11.5219952/47.1307314,10.2663241">http://www.google.com/maps/dir/48.1268249,11.5219952/47.1307314,10.2663241</a>
+Route status : 17, distance : 265518, duration : 3.70416808128
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing NAV_Antwerpen_1.yaml : 51.22149,4.37794 to 51.21873,4.37827
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.22149%2C4.37794%3B51.21873%2C4.37827">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.22149%2C4.37794%3B51.21873%2C4.37827</a>
+<a href="https://graphhopper.com/maps/?point=51.22149%2C4.37794&amp;point=51.21873%2C4.37827">https://graphhopper.com/maps/?point=51.22149%2C4.37794&amp;point=51.21873%2C4.37827</a>
+<a href="http://www.google.com/maps/dir/51.22149,4.37794/51.21873,4.37827">http://www.google.com/maps/dir/51.22149,4.37794/51.21873,4.37827</a>
+Route status : 17, distance : 305, duration : 3.50537800789
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing NAV_Brandstraat.yaml : 50.9499,3.5015 to 50.9411,3.5073
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9499%2C3.5015%3B50.9411%2C3.5073">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9499%2C3.5015%3B50.9411%2C3.5073</a>
+<a href="https://graphhopper.com/maps/?point=50.9499%2C3.5015&amp;point=50.9411%2C3.5073">https://graphhopper.com/maps/?point=50.9499%2C3.5015&amp;point=50.9411%2C3.5073</a>
+<a href="http://www.google.com/maps/dir/50.9499,3.5015/50.9411,3.5073">http://www.google.com/maps/dir/50.9499,3.5015/50.9411,3.5073</a>
+Route status : 17, distance : 1301, duration : 1.277987957
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing NAV_Budapest_1.yaml : 47.53916,19.04749 to 47.53986,19.04499
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.53916%2C19.04749%3B47.53986%2C19.04499">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.53916%2C19.04749%3B47.53986%2C19.04499</a>
+<a href="https://graphhopper.com/maps/?point=47.53916%2C19.04749&amp;point=47.53986%2C19.04499">https://graphhopper.com/maps/?point=47.53916%2C19.04749&amp;point=47.53986%2C19.04499</a>
+<a href="http://www.google.com/maps/dir/47.53916,19.04749/47.53986,19.04499">http://www.google.com/maps/dir/47.53916,19.04749/47.53986,19.04499</a>
+No route found, last status : 1, duration : 50.3126878738
+dbus result mismatch [ got 1==33</p>
+
+<p>Testing NAV_Deinze_1.yaml : 50.97706,3.52743 to 50.97906,3.53082
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.97706%2C3.52743%3B50.97906%2C3.53082">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.97706%2C3.52743%3B50.97906%2C3.53082</a>
+<a href="https://graphhopper.com/maps/?point=50.97706%2C3.52743&amp;point=50.97906%2C3.53082">https://graphhopper.com/maps/?point=50.97706%2C3.52743&amp;point=50.97906%2C3.53082</a>
+<a href="http://www.google.com/maps/dir/50.97706,3.52743/50.97906,3.53082">http://www.google.com/maps/dir/50.97706,3.52743/50.97906,3.53082</a>
+Route status : 17, distance : 326, duration : 1.24294114113
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing NAV_Rue_de_Lille.yaml : 50.5433,2.82076 to 50.54118,2.81936
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.5433%2C2.82076%3B50.54118%2C2.81936">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.5433%2C2.82076%3B50.54118%2C2.81936</a>
+<a href="https://graphhopper.com/maps/?point=50.5433%2C2.82076&amp;point=50.54118%2C2.81936">https://graphhopper.com/maps/?point=50.5433%2C2.82076&amp;point=50.54118%2C2.81936</a>
+<a href="http://www.google.com/maps/dir/50.5433,2.82076/50.54118,2.81936">http://www.google.com/maps/dir/50.5433,2.82076/50.54118,2.81936</a>
+Route status : 17, distance : 269, duration : 1.340102911
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing NAV_Souchez_unnecessary_announcements.yaml : 50.365647,2.744796 to 50.407738,2.732666
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.365647%2C2.744796%3B50.407738%2C2.732666">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.365647%2C2.744796%3B50.407738%2C2.732666</a>
+<a href="https://graphhopper.com/maps/?point=50.365647%2C2.744796&amp;point=50.407738%2C2.732666">https://graphhopper.com/maps/?point=50.365647%2C2.744796&amp;point=50.407738%2C2.732666</a>
+<a href="http://www.google.com/maps/dir/50.365647,2.744796/50.407738,2.732666">http://www.google.com/maps/dir/50.365647,2.744796/50.407738,2.732666</a>
+Route status : 17, distance : 5124, duration : 1.21944284439
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Nuernberg_E.yaml : 49.4700395,11.18529 to 49.4374417,11.2694876
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4700395%2C11.18529%3B49.4374417%2C11.2694876">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4700395%2C11.18529%3B49.4374417%2C11.2694876</a>
+<a href="https://graphhopper.com/maps/?point=49.4700395%2C11.18529&amp;point=49.4374417%2C11.2694876">https://graphhopper.com/maps/?point=49.4700395%2C11.18529&amp;point=49.4374417%2C11.2694876</a>
+<a href="http://www.google.com/maps/dir/49.4700395,11.18529/49.4374417,11.2694876">http://www.google.com/maps/dir/49.4700395,11.18529/49.4374417,11.2694876</a>
+Route status : 17, distance : 7842, duration : 1.69338107109
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Nuernberg_N.yaml : 49.4085208,11.1956694 to 49.4965279,11.2825354
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4085208%2C11.1956694%3B49.4965279%2C11.2825354">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4085208%2C11.1956694%3B49.4965279%2C11.2825354</a>
+<a href="https://graphhopper.com/maps/?point=49.4085208%2C11.1956694&amp;point=49.4965279%2C11.2825354">https://graphhopper.com/maps/?point=49.4085208%2C11.1956694&amp;point=49.4965279%2C11.2825354</a>
+<a href="http://www.google.com/maps/dir/49.4085208,11.1956694/49.4965279,11.2825354">http://www.google.com/maps/dir/49.4085208,11.1956694/49.4965279,11.2825354</a>
+Route status : 17, distance : 11669, duration : 1.46220898628
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Nuernberg_S.yaml : 49.4700395,11.18529 to 49.4099119,11.1957442
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4700395%2C11.18529%3B49.4099119%2C11.1957442">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4700395%2C11.18529%3B49.4099119%2C11.1957442</a>
+<a href="https://graphhopper.com/maps/?point=49.4700395%2C11.18529&amp;point=49.4099119%2C11.1957442">https://graphhopper.com/maps/?point=49.4700395%2C11.18529&amp;point=49.4099119%2C11.1957442</a>
+<a href="http://www.google.com/maps/dir/49.4700395,11.18529/49.4099119,11.1957442">http://www.google.com/maps/dir/49.4700395,11.18529/49.4099119,11.1957442</a>
+Route status : 17, distance : 10627, duration : 2.3134059906
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Nuernberg_W.yaml : 49.4085208,11.1956694 to 49.4696947,11.1860095
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4085208%2C11.1956694%3B49.4696947%2C11.1860095">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4085208%2C11.1956694%3B49.4696947%2C11.1860095</a>
+<a href="https://graphhopper.com/maps/?point=49.4085208%2C11.1956694&amp;point=49.4696947%2C11.1860095">https://graphhopper.com/maps/?point=49.4085208%2C11.1956694&amp;point=49.4696947%2C11.1860095</a>
+<a href="http://www.google.com/maps/dir/49.4085208,11.1956694/49.4696947,11.1860095">http://www.google.com/maps/dir/49.4085208,11.1956694/49.4696947,11.1860095</a>
+Route status : 17, distance : 10728, duration : 2.74666404724
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing OSRM_issue_1324_1.yaml : 51.436665,6.754817 to 51.435616,6.737384
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.436665%2C6.754817%3B51.435616%2C6.737384">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.436665%2C6.754817%3B51.435616%2C6.737384</a>
+<a href="https://graphhopper.com/maps/?point=51.436665%2C6.754817&amp;point=51.435616%2C6.737384">https://graphhopper.com/maps/?point=51.436665%2C6.754817&amp;point=51.435616%2C6.737384</a>
+<a href="http://www.google.com/maps/dir/51.436665,6.754817/51.435616,6.737384">http://www.google.com/maps/dir/51.436665,6.754817/51.435616,6.737384</a>
+Route status : 17, distance : 1239, duration : 2.77420210838
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing OSRM_issue_1645.yaml : 52.7086218,5.8629592 to 52.7101883,5.8652981
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.7086218%2C5.8629592%3B52.7101883%2C5.8652981">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.7086218%2C5.8629592%3B52.7101883%2C5.8652981</a>
+<a href="https://graphhopper.com/maps/?point=52.7086218%2C5.8629592&amp;point=52.7101883%2C5.8652981">https://graphhopper.com/maps/?point=52.7086218%2C5.8629592&amp;point=52.7101883%2C5.8652981</a>
+<a href="http://www.google.com/maps/dir/52.7086218,5.8629592/52.7101883,5.8652981">http://www.google.com/maps/dir/52.7086218,5.8629592/52.7101883,5.8652981</a>
+Route status : 17, distance : 293, duration : 1.39594602585
+dbus result mismatch [ got 17==None</p>
+
+<p>Testing OSRM_issue_1674.yaml : 50.9033013,20.5911882 to 50.9076719,20.5742795
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9033013%2C20.5911882%3B50.9076719%2C20.5742795">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9033013%2C20.5911882%3B50.9076719%2C20.5742795</a>
+<a href="https://graphhopper.com/maps/?point=50.9033013%2C20.5911882&amp;point=50.9076719%2C20.5742795">https://graphhopper.com/maps/?point=50.9033013%2C20.5911882&amp;point=50.9076719%2C20.5742795</a>
+<a href="http://www.google.com/maps/dir/50.9033013,20.5911882/50.9076719,20.5742795">http://www.google.com/maps/dir/50.9033013,20.5911882/50.9076719,20.5742795</a>
+Route status : 17, distance : 1952, duration : 1.29115819931
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Oakland_highway_entrance.yaml : 37.7758025,-122.2363311 to 37.780563,-122.2383228
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.7758025%2C-122.2363311%3B37.780563%2C-122.2383228">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.7758025%2C-122.2363311%3B37.780563%2C-122.2383228</a>
+<a href="https://graphhopper.com/maps/?point=37.7758025%2C-122.2363311&amp;point=37.780563%2C-122.2383228">https://graphhopper.com/maps/?point=37.7758025%2C-122.2363311&amp;point=37.780563%2C-122.2383228</a>
+<a href="http://www.google.com/maps/dir/37.7758025,-122.2363311/37.780563,-122.2383228">http://www.google.com/maps/dir/37.7758025,-122.2363311/37.780563,-122.2383228</a>
+Route status : 17, distance : 567, duration : 1.25199389458
+navigation items count mismatch [ got 0.0, expected &lt;0</p>
+
+<p>Testing Petuelring.yaml : 48.1781212,11.5750121 to 48.178083,11.5719105
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1781212%2C11.5750121%3B48.178083%2C11.5719105">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.1781212%2C11.5750121%3B48.178083%2C11.5719105</a>
+<a href="https://graphhopper.com/maps/?point=48.1781212%2C11.5750121&amp;point=48.178083%2C11.5719105">https://graphhopper.com/maps/?point=48.1781212%2C11.5750121&amp;point=48.178083%2C11.5719105</a>
+<a href="http://www.google.com/maps/dir/48.1781212,11.5750121/48.178083,11.5719105">http://www.google.com/maps/dir/48.1781212,11.5750121/48.178083,11.5719105</a>
+Route status : 17, distance : 232, duration : 1.2754509449
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing RTE_Drongen_Deinze.yaml : 51.0382,3.6306 to 50.976,3.5256
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0382%2C3.6306%3B50.976%2C3.5256">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.0382%2C3.6306%3B50.976%2C3.5256</a>
+<a href="https://graphhopper.com/maps/?point=51.0382%2C3.6306&amp;point=50.976%2C3.5256">https://graphhopper.com/maps/?point=51.0382%2C3.6306&amp;point=50.976%2C3.5256</a>
+<a href="http://www.google.com/maps/dir/51.0382,3.6306/50.976,3.5256">http://www.google.com/maps/dir/51.0382,3.6306/50.976,3.5256</a>
+Route status : 17, distance : 11485, duration : 1.39025807381</p>
+
+<p>Testing RTE_Hopkins_street.yaml : 37.88504,-122.27571 to 37.88442,-122.2756
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.88504%2C-122.27571%3B37.88442%2C-122.2756">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.88504%2C-122.27571%3B37.88442%2C-122.2756</a>
+<a href="https://graphhopper.com/maps/?point=37.88504%2C-122.27571&amp;point=37.88442%2C-122.2756">https://graphhopper.com/maps/?point=37.88504%2C-122.27571&amp;point=37.88442%2C-122.2756</a>
+<a href="http://www.google.com/maps/dir/37.88504,-122.27571/37.88442,-122.2756">http://www.google.com/maps/dir/37.88504,-122.27571/37.88442,-122.2756</a>
+No route found, last status : 3, duration : 52.0760989189
+dbus result mismatch [ got 3&gt;=17</p>
+
+<p>Testing RTE_OSRM_issue_1794.yaml : 48.24497,14.237 to 48.24526,14.2364
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.24497%2C14.237%3B48.24526%2C14.2364">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.24497%2C14.237%3B48.24526%2C14.2364</a>
+<a href="https://graphhopper.com/maps/?point=48.24497%2C14.237&amp;point=48.24526%2C14.2364">https://graphhopper.com/maps/?point=48.24497%2C14.237&amp;point=48.24526%2C14.2364</a>
+<a href="http://www.google.com/maps/dir/48.24497,14.237/48.24526,14.2364">http://www.google.com/maps/dir/48.24497,14.237/48.24526,14.2364</a>
+Route status : 17, distance : 94, duration : 2.97019195557
+dbus result mismatch [ got 94&gt;950</p>
+
+<p>Testing RTE_Pierregot_track.yaml : 50.0115,2.3846 to 50.0031,2.3854
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.0115%2C2.3846%3B50.0031%2C2.3854">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.0115%2C2.3846%3B50.0031%2C2.3854</a>
+<a href="https://graphhopper.com/maps/?point=50.0115%2C2.3846&amp;point=50.0031%2C2.3854">https://graphhopper.com/maps/?point=50.0115%2C2.3846&amp;point=50.0031%2C2.3854</a>
+<a href="http://www.google.com/maps/dir/50.0115,2.3846/50.0031,2.3854">http://www.google.com/maps/dir/50.0115,2.3846/50.0031,2.3854</a>
+Route status : 17, distance : 1271, duration : 1.30478382111
+dbus result mismatch [ got 1271&gt;1500</p>
+
+<p>Testing RTE_Tonisberg_1.yaml : 51.41513,6.50184 to 51.41437,6.50097
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.41513%2C6.50184%3B51.41437%2C6.50097">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.41513%2C6.50184%3B51.41437%2C6.50097</a>
+<a href="https://graphhopper.com/maps/?point=51.41513%2C6.50184&amp;point=51.41437%2C6.50097">https://graphhopper.com/maps/?point=51.41513%2C6.50184&amp;point=51.41437%2C6.50097</a>
+<a href="http://www.google.com/maps/dir/51.41513,6.50184/51.41437,6.50097">http://www.google.com/maps/dir/51.41513,6.50184/51.41437,6.50097</a>
+Route status : 17, distance : 585, duration : 1.24143195152
+dbus result mismatch [ got 585&lt;200</p>
+
+<p>Testing RTE_Tonisberg_2.yaml : 51.4152951,6.5020104 to 51.4133301,6.4994673
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.4152951%2C6.5020104%3B51.4133301%2C6.4994673">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.4152951%2C6.5020104%3B51.4133301%2C6.4994673</a>
+<a href="https://graphhopper.com/maps/?point=51.4152951%2C6.5020104&amp;point=51.4133301%2C6.4994673">https://graphhopper.com/maps/?point=51.4152951%2C6.5020104&amp;point=51.4133301%2C6.4994673</a>
+<a href="http://www.google.com/maps/dir/51.4152951,6.5020104/51.4133301,6.4994673">http://www.google.com/maps/dir/51.4152951,6.5020104/51.4133301,6.4994673</a>
+Route status : 17, distance : 528, duration : 1.27192997932</p>
+
+<p>Testing RTE_Trac_1323_2.yaml : 53.2189,23.15844 to 53.21716,23.15367
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=53.2189%2C23.15844%3B53.21716%2C23.15367">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=53.2189%2C23.15844%3B53.21716%2C23.15367</a>
+<a href="https://graphhopper.com/maps/?point=53.2189%2C23.15844&amp;point=53.21716%2C23.15367">https://graphhopper.com/maps/?point=53.2189%2C23.15844&amp;point=53.21716%2C23.15367</a>
+<a href="http://www.google.com/maps/dir/53.2189,23.15844/53.21716,23.15367">http://www.google.com/maps/dir/53.2189,23.15844/53.21716,23.15367</a>
+No route found, last status : 3, duration : 50.3282351494
+dbus result mismatch [ got 3&gt;=17</p>
+
+<p>Testing Rongellen.yaml : 46.4626607,9.1923326 to 46.673579,9.443444
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.673579%2C9.443444">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.673579%2C9.443444</a>
+<a href="https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.673579%2C9.443444">https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.673579%2C9.443444</a>
+<a href="http://www.google.com/maps/dir/46.4626607,9.1923326/46.673579,9.443444">http://www.google.com/maps/dir/46.4626607,9.1923326/46.673579,9.443444</a>
+Route status : 17, distance : 42319, duration : 1.26306700706
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Roveredo_NE.yaml : 46.1952327,9.0291322 to 46.2336662,9.1240505
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.1952327%2C9.0291322%3B46.2336662%2C9.1240505">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.1952327%2C9.0291322%3B46.2336662%2C9.1240505</a>
+<a href="https://graphhopper.com/maps/?point=46.1952327%2C9.0291322&amp;point=46.2336662%2C9.1240505">https://graphhopper.com/maps/?point=46.1952327%2C9.0291322&amp;point=46.2336662%2C9.1240505</a>
+<a href="http://www.google.com/maps/dir/46.1952327,9.0291322/46.2336662,9.1240505">http://www.google.com/maps/dir/46.1952327,9.0291322/46.2336662,9.1240505</a>
+Route status : 17, distance : 13225, duration : 2.0685198307
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Roveredo_SW.yaml : 46.3163555,9.1977032 to 46.2336662,9.1240505
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.3163555%2C9.1977032%3B46.2336662%2C9.1240505">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.3163555%2C9.1977032%3B46.2336662%2C9.1240505</a>
+<a href="https://graphhopper.com/maps/?point=46.3163555%2C9.1977032&amp;point=46.2336662%2C9.1240505">https://graphhopper.com/maps/?point=46.3163555%2C9.1977032&amp;point=46.2336662%2C9.1240505</a>
+<a href="http://www.google.com/maps/dir/46.3163555,9.1977032/46.2336662,9.1240505">http://www.google.com/maps/dir/46.3163555,9.1977032/46.2336662,9.1240505</a>
+Route status : 17, distance : 12255, duration : 1.74489021301
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing San_Bernardino.yaml : 46.673579,9.443444 to 46.4626607,9.1923326
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.673579%2C9.443444%3B46.4626607%2C9.1923326">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.673579%2C9.443444%3B46.4626607%2C9.1923326</a>
+<a href="https://graphhopper.com/maps/?point=46.673579%2C9.443444&amp;point=46.4626607%2C9.1923326">https://graphhopper.com/maps/?point=46.673579%2C9.443444&amp;point=46.4626607%2C9.1923326</a>
+<a href="http://www.google.com/maps/dir/46.673579,9.443444/46.4626607,9.1923326">http://www.google.com/maps/dir/46.673579,9.443444/46.4626607,9.1923326</a>
+Route status : 17, distance : 42439, duration : 1.51560091972
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing SavanoriuZiedas_left.yaml : 54.6732446,25.2402179 to 54.6661841,25.2514258
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6732446%2C25.2402179%3B54.6661841%2C25.2514258">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6732446%2C25.2402179%3B54.6661841%2C25.2514258</a>
+<a href="https://graphhopper.com/maps/?point=54.6732446%2C25.2402179&amp;point=54.6661841%2C25.2514258">https://graphhopper.com/maps/?point=54.6732446%2C25.2402179&amp;point=54.6661841%2C25.2514258</a>
+<a href="http://www.google.com/maps/dir/54.6732446,25.2402179/54.6661841,25.2514258">http://www.google.com/maps/dir/54.6732446,25.2402179/54.6661841,25.2514258</a>
+Route status : 17, distance : 1558, duration : 2.07513308525
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing SavanoriuZiedas_right.yaml : 54.6732446,25.2402179 to 54.6708466,25.2281783
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6732446%2C25.2402179%3B54.6708466%2C25.2281783">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6732446%2C25.2402179%3B54.6708466%2C25.2281783</a>
+<a href="https://graphhopper.com/maps/?point=54.6732446%2C25.2402179&amp;point=54.6708466%2C25.2281783">https://graphhopper.com/maps/?point=54.6732446%2C25.2402179&amp;point=54.6708466%2C25.2281783</a>
+<a href="http://www.google.com/maps/dir/54.6732446,25.2402179/54.6708466,25.2281783">http://www.google.com/maps/dir/54.6732446,25.2402179/54.6708466,25.2281783</a>
+Route status : 17, distance : 1105, duration : 1.26839590073
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing SavanoriuZiedas_sharpleft.yaml : 54.6732446,25.2402179 to 54.6707361,25.2419142
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6732446%2C25.2402179%3B54.6707361%2C25.2419142">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.6732446%2C25.2402179%3B54.6707361%2C25.2419142</a>
+<a href="https://graphhopper.com/maps/?point=54.6732446%2C25.2402179&amp;point=54.6707361%2C25.2419142">https://graphhopper.com/maps/?point=54.6732446%2C25.2402179&amp;point=54.6707361%2C25.2419142</a>
+<a href="http://www.google.com/maps/dir/54.6732446,25.2402179/54.6707361,25.2419142">http://www.google.com/maps/dir/54.6732446,25.2402179/54.6707361,25.2419142</a>
+Route status : 17, distance : 1088, duration : 1.22828102112
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Senoji_Varena.yaml : 54.3490669,24.7205264 to 54.251295,24.5466889
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.3490669%2C24.7205264%3B54.251295%2C24.5466889">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.3490669%2C24.7205264%3B54.251295%2C24.5466889</a>
+<a href="https://graphhopper.com/maps/?point=54.3490669%2C24.7205264&amp;point=54.251295%2C24.5466889">https://graphhopper.com/maps/?point=54.3490669%2C24.7205264&amp;point=54.251295%2C24.5466889</a>
+<a href="http://www.google.com/maps/dir/54.3490669,24.7205264/54.251295,24.5466889">http://www.google.com/maps/dir/54.3490669,24.7205264/54.251295,24.5466889</a>
+Route status : 17, distance : 16749, duration : 1.19619488716
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Sint-Niklaas.yaml : 51.132842,4.126029 to 51.144151,4.187033
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.132842%2C4.126029%3B51.144151%2C4.187033">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.132842%2C4.126029%3B51.144151%2C4.187033</a>
+<a href="https://graphhopper.com/maps/?point=51.132842%2C4.126029&amp;point=51.144151%2C4.187033">https://graphhopper.com/maps/?point=51.132842%2C4.126029&amp;point=51.144151%2C4.187033</a>
+<a href="http://www.google.com/maps/dir/51.132842,4.126029/51.144151,4.187033">http://www.google.com/maps/dir/51.132842,4.126029/51.144151,4.187033</a>
+Route status : 17, distance : 4443, duration : 1.30132603645</p>
+
+<p>Testing Sufers_NE.yaml : 46.673579,9.443444 to 46.5694106,9.3681405
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.673579%2C9.443444%3B46.5694106%2C9.3681405">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.673579%2C9.443444%3B46.5694106%2C9.3681405</a>
+<a href="https://graphhopper.com/maps/?point=46.673579%2C9.443444&amp;point=46.5694106%2C9.3681405">https://graphhopper.com/maps/?point=46.673579%2C9.443444&amp;point=46.5694106%2C9.3681405</a>
+<a href="http://www.google.com/maps/dir/46.673579,9.443444/46.5694106,9.3681405">http://www.google.com/maps/dir/46.673579,9.443444/46.5694106,9.3681405</a>
+Route status : 17, distance : 19131, duration : 1.66684508324
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Sufers_SW.yaml : 46.4626607,9.1923326 to 46.5694106,9.3681405
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.5694106%2C9.3681405">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=46.4626607%2C9.1923326%3B46.5694106%2C9.3681405</a>
+<a href="https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.5694106%2C9.3681405">https://graphhopper.com/maps/?point=46.4626607%2C9.1923326&amp;point=46.5694106%2C9.3681405</a>
+<a href="http://www.google.com/maps/dir/46.4626607,9.1923326/46.5694106,9.3681405">http://www.google.com/maps/dir/46.4626607,9.1923326/46.5694106,9.3681405</a>
+Route status : 17, distance : 23269, duration : 1.51644921303
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Ternat.yaml : 50.891674,4.1218235 to 50.8814575,4.1664836
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.891674%2C4.1218235%3B50.8814575%2C4.1664836">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.891674%2C4.1218235%3B50.8814575%2C4.1664836</a>
+<a href="https://graphhopper.com/maps/?point=50.891674%2C4.1218235&amp;point=50.8814575%2C4.1664836">https://graphhopper.com/maps/?point=50.891674%2C4.1218235&amp;point=50.8814575%2C4.1664836</a>
+<a href="http://www.google.com/maps/dir/50.891674,4.1218235/50.8814575,4.1664836">http://www.google.com/maps/dir/50.891674,4.1218235/50.8814575,4.1664836</a>
+Route status : 17, distance : 3881, duration : 1.58172011375
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Unterinntal_E.yaml : 47.7259879,12.1229121 to 47.7990707,12.1675812
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.7259879%2C12.1229121%3B47.7990707%2C12.1675812">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.7259879%2C12.1229121%3B47.7990707%2C12.1675812</a>
+<a href="https://graphhopper.com/maps/?point=47.7259879%2C12.1229121&amp;point=47.7990707%2C12.1675812">https://graphhopper.com/maps/?point=47.7259879%2C12.1229121&amp;point=47.7990707%2C12.1675812</a>
+<a href="http://www.google.com/maps/dir/47.7259879,12.1229121/47.7990707,12.1675812">http://www.google.com/maps/dir/47.7259879,12.1229121/47.7990707,12.1675812</a>
+Route status : 17, distance : 16827, duration : 1.86838197708
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Unterinntal_W.yaml : 47.7371683,12.1034461 to 47.8163105,12.0157491
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.7371683%2C12.1034461%3B47.8163105%2C12.0157491">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.7371683%2C12.1034461%3B47.8163105%2C12.0157491</a>
+<a href="https://graphhopper.com/maps/?point=47.7371683%2C12.1034461&amp;point=47.8163105%2C12.0157491">https://graphhopper.com/maps/?point=47.7371683%2C12.1034461&amp;point=47.8163105%2C12.0157491</a>
+<a href="http://www.google.com/maps/dir/47.7371683,12.1034461/47.8163105,12.0157491">http://www.google.com/maps/dir/47.7371683,12.1034461/47.8163105,12.0157491</a>
+Route status : 17, distance : 17050, duration : 2.25073599815
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Urdorf.yaml : 47.4270615,8.4915559 to 47.3940008,8.4171643
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.4270615%2C8.4915559%3B47.3940008%2C8.4171643">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.4270615%2C8.4915559%3B47.3940008%2C8.4171643</a>
+<a href="https://graphhopper.com/maps/?point=47.4270615%2C8.4915559&amp;point=47.3940008%2C8.4171643">https://graphhopper.com/maps/?point=47.4270615%2C8.4915559&amp;point=47.3940008%2C8.4171643</a>
+<a href="http://www.google.com/maps/dir/47.4270615,8.4915559/47.3940008,8.4171643">http://www.google.com/maps/dir/47.4270615,8.4915559/47.3940008,8.4171643</a>
+Route status : 17, distance : 7729, duration : 2.29323601723
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Via_Graf.yaml : 45.5133242,9.1439748 to 45.5146592,9.1391345
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=45.5133242%2C9.1439748%3B45.5146592%2C9.1391345">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=45.5133242%2C9.1439748%3B45.5146592%2C9.1391345</a>
+<a href="https://graphhopper.com/maps/?point=45.5133242%2C9.1439748&amp;point=45.5146592%2C9.1391345">https://graphhopper.com/maps/?point=45.5133242%2C9.1439748&amp;point=45.5146592%2C9.1391345</a>
+<a href="http://www.google.com/maps/dir/45.5133242,9.1439748/45.5146592,9.1391345">http://www.google.com/maps/dir/45.5133242,9.1439748/45.5146592,9.1391345</a>
+Route status : 17, distance : 544, duration : 2.16774511337
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Vienna_turn_restriction.yaml : 48.211632,16.372225 to 48.211697,16.372553
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.211632%2C16.372225%3B48.211697%2C16.372553">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.211632%2C16.372225%3B48.211697%2C16.372553</a>
+<a href="https://graphhopper.com/maps/?point=48.211632%2C16.372225&amp;point=48.211697%2C16.372553">https://graphhopper.com/maps/?point=48.211632%2C16.372225&amp;point=48.211697%2C16.372553</a>
+<a href="http://www.google.com/maps/dir/48.211632,16.372225/48.211697,16.372553">http://www.google.com/maps/dir/48.211632,16.372225/48.211697,16.372553</a>
+Route status : 17, distance : 36, duration : 1.32169699669
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Vierzon_turn_restriction.yaml : 47.204224,2.03473 to 47.203953,2.034392
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.204224%2C2.03473%3B47.203953%2C2.034392">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.204224%2C2.03473%3B47.203953%2C2.034392</a>
+<a href="https://graphhopper.com/maps/?point=47.204224%2C2.03473&amp;point=47.203953%2C2.034392">https://graphhopper.com/maps/?point=47.204224%2C2.03473&amp;point=47.203953%2C2.034392</a>
+<a href="http://www.google.com/maps/dir/47.204224,2.03473/47.203953,2.034392">http://www.google.com/maps/dir/47.204224,2.03473/47.203953,2.034392</a>
+Route status : 17, distance : 67, duration : 1.4379119873</p>
+
+<p>Testing Vievis.yaml : 54.871362,25.0643171 to 54.7693774,24.8158205
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.871362%2C25.0643171%3B54.7693774%2C24.8158205">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.871362%2C25.0643171%3B54.7693774%2C24.8158205</a>
+<a href="https://graphhopper.com/maps/?point=54.871362%2C25.0643171&amp;point=54.7693774%2C24.8158205">https://graphhopper.com/maps/?point=54.871362%2C25.0643171&amp;point=54.7693774%2C24.8158205</a>
+<a href="http://www.google.com/maps/dir/54.871362,25.0643171/54.7693774,24.8158205">http://www.google.com/maps/dir/54.871362,25.0643171/54.7693774,24.8158205</a>
+Route status : 17, distance : 27327, duration : 1.21678304672
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Vilnius_Siauliai.yaml : 54.722023,25.338496 to 55.9649502,23.3085362
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.722023%2C25.338496%3B55.9649502%2C23.3085362">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.722023%2C25.338496%3B55.9649502%2C23.3085362</a>
+<a href="https://graphhopper.com/maps/?point=54.722023%2C25.338496&amp;point=55.9649502%2C23.3085362">https://graphhopper.com/maps/?point=54.722023%2C25.338496&amp;point=55.9649502%2C23.3085362</a>
+<a href="http://www.google.com/maps/dir/54.722023,25.338496/55.9649502,23.3085362">http://www.google.com/maps/dir/54.722023,25.338496/55.9649502,23.3085362</a>
+Route status : 17, distance : 221295, duration : 1.3320710659
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Vilnius_Suwalki.yaml : 54.722023,25.338496 to 54.1277582,22.9472479
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.722023%2C25.338496%3B54.1277582%2C22.9472479">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=54.722023%2C25.338496%3B54.1277582%2C22.9472479</a>
+<a href="https://graphhopper.com/maps/?point=54.722023%2C25.338496&amp;point=54.1277582%2C22.9472479">https://graphhopper.com/maps/?point=54.722023%2C25.338496&amp;point=54.1277582%2C22.9472479</a>
+<a href="http://www.google.com/maps/dir/54.722023,25.338496/54.1277582,22.9472479">http://www.google.com/maps/dir/54.722023,25.338496/54.1277582,22.9472479</a>
+Route status : 17, distance : 227906, duration : 2.16075611115
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Werder_N.yaml : 52.3098972,12.8770471 to 52.3945037,12.8387374
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.3098972%2C12.8770471%3B52.3945037%2C12.8387374">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.3098972%2C12.8770471%3B52.3945037%2C12.8387374</a>
+<a href="https://graphhopper.com/maps/?point=52.3098972%2C12.8770471&amp;point=52.3945037%2C12.8387374">https://graphhopper.com/maps/?point=52.3098972%2C12.8770471&amp;point=52.3945037%2C12.8387374</a>
+<a href="http://www.google.com/maps/dir/52.3098972,12.8770471/52.3945037,12.8387374">http://www.google.com/maps/dir/52.3098972,12.8770471/52.3945037,12.8387374</a>
+Route status : 17, distance : 12298, duration : 2.12918591499
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Werder_W.yaml : 52.3098972,12.8770471 to 52.3411968,12.7570371
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.3098972%2C12.8770471%3B52.3411968%2C12.7570371">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=52.3098972%2C12.8770471%3B52.3411968%2C12.7570371</a>
+<a href="https://graphhopper.com/maps/?point=52.3098972%2C12.8770471&amp;point=52.3411968%2C12.7570371">https://graphhopper.com/maps/?point=52.3098972%2C12.8770471&amp;point=52.3411968%2C12.7570371</a>
+<a href="http://www.google.com/maps/dir/52.3098972,12.8770471/52.3411968,12.7570371">http://www.google.com/maps/dir/52.3098972,12.8770471/52.3411968,12.7570371</a>
+Route status : 17, distance : 9196, duration : 1.53303480148
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Wettingen.yaml : 47.4270615,8.4915559 to 47.4504179,8.3439187
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.4270615%2C8.4915559%3B47.4504179%2C8.3439187">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=47.4270615%2C8.4915559%3B47.4504179%2C8.3439187</a>
+<a href="https://graphhopper.com/maps/?point=47.4270615%2C8.4915559&amp;point=47.4504179%2C8.3439187">https://graphhopper.com/maps/?point=47.4270615%2C8.4915559&amp;point=47.4504179%2C8.3439187</a>
+<a href="http://www.google.com/maps/dir/47.4270615,8.4915559/47.4504179,8.3439187">http://www.google.com/maps/dir/47.4270615,8.4915559/47.4504179,8.3439187</a>
+Route status : 17, distance : 13901, duration : 1.6243288517
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Yosemite_route_has_gap.yaml : 37.7392867,-119.5943002 to 37.7439901,-119.5895413
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.7392867%2C-119.5943002%3B37.7439901%2C-119.5895413">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.7392867%2C-119.5943002%3B37.7439901%2C-119.5895413</a>
+<a href="https://graphhopper.com/maps/?point=37.7392867%2C-119.5943002&amp;point=37.7439901%2C-119.5895413">https://graphhopper.com/maps/?point=37.7392867%2C-119.5943002&amp;point=37.7439901%2C-119.5895413</a>
+<a href="http://www.google.com/maps/dir/37.7392867,-119.5943002/37.7439901,-119.5895413">http://www.google.com/maps/dir/37.7392867,-119.5943002/37.7439901,-119.5895413</a>
+Route status : 17, distance : 711, duration : 3.49752998352
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing Yosemite_route_has_gap_2.yaml : 37.746597,-119.590193 to 37.742771,-119.600321
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.746597%2C-119.590193%3B37.742771%2C-119.600321">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.746597%2C-119.590193%3B37.742771%2C-119.600321</a>
+<a href="https://graphhopper.com/maps/?point=37.746597%2C-119.590193&amp;point=37.742771%2C-119.600321">https://graphhopper.com/maps/?point=37.746597%2C-119.590193&amp;point=37.742771%2C-119.600321</a>
+<a href="http://www.google.com/maps/dir/37.746597,-119.590193/37.742771,-119.600321">http://www.google.com/maps/dir/37.746597,-119.590193/37.742771,-119.600321</a>
+Route status : 17, distance : 1116, duration : 1.14096283913
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing no_HOV_1.yaml : 37.78644,-122.38992 to 37.78622,-122.3905
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.78644%2C-122.38992%3B37.78622%2C-122.3905">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.78644%2C-122.38992%3B37.78622%2C-122.3905</a>
+<a href="https://graphhopper.com/maps/?point=37.78644%2C-122.38992&amp;point=37.78622%2C-122.3905">https://graphhopper.com/maps/?point=37.78644%2C-122.38992&amp;point=37.78622%2C-122.3905</a>
+<a href="http://www.google.com/maps/dir/37.78644,-122.38992/37.78622,-122.3905">http://www.google.com/maps/dir/37.78644,-122.38992/37.78622,-122.3905</a>
+Route status : 17, distance : 816, duration : 1.20344018936
+dbus result mismatch [ got 816&gt;3985</p>
+
+<p>Testing no_HOV_2.yaml : 37.8386,-122.2944 to 37.82179,-122.33151
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8386%2C-122.2944%3B37.82179%2C-122.33151">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=37.8386%2C-122.2944%3B37.82179%2C-122.33151</a>
+<a href="https://graphhopper.com/maps/?point=37.8386%2C-122.2944&amp;point=37.82179%2C-122.33151">https://graphhopper.com/maps/?point=37.8386%2C-122.2944&amp;point=37.82179%2C-122.33151</a>
+<a href="http://www.google.com/maps/dir/37.8386,-122.2944/37.82179,-122.33151">http://www.google.com/maps/dir/37.8386,-122.2944/37.82179,-122.33151</a>
+Route status : 17, distance : 5136, duration : 1.25414800644</p>
+
+<p>Testing no_HOV_3.yaml : 42.3323355,-71.0628454 to 42.3527394,-71.0419662
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=42.3323355%2C-71.0628454%3B42.3527394%2C-71.0419662">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=42.3323355%2C-71.0628454%3B42.3527394%2C-71.0419662</a>
+<a href="https://graphhopper.com/maps/?point=42.3323355%2C-71.0628454&amp;point=42.3527394%2C-71.0419662">https://graphhopper.com/maps/?point=42.3323355%2C-71.0628454&amp;point=42.3527394%2C-71.0419662</a>
+<a href="http://www.google.com/maps/dir/42.3323355,-71.0628454/42.3527394,-71.0419662">http://www.google.com/maps/dir/42.3323355,-71.0628454/42.3527394,-71.0419662</a>
+Route status : 17, distance : 3389, duration : 1.334182024</p>
+
+<p>Testing no_right_turn.yaml : 50.8703,20.61689 to 50.86772,20.61528
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.8703%2C20.61689%3B50.86772%2C20.61528">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.8703%2C20.61689%3B50.86772%2C20.61528</a>
+<a href="https://graphhopper.com/maps/?point=50.8703%2C20.61689&amp;point=50.86772%2C20.61528">https://graphhopper.com/maps/?point=50.8703%2C20.61689&amp;point=50.86772%2C20.61528</a>
+<a href="http://www.google.com/maps/dir/50.8703,20.61689/50.86772,20.61528">http://www.google.com/maps/dir/50.8703,20.61689/50.86772,20.61528</a>
+Route status : 17, distance : 1140, duration : 1.76262903214</p>
+
+<p>Testing only_use_exit.yaml : 49.5757542,3.7059099 to 49.5808465,3.7049014
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.5757542%2C3.7059099%3B49.5808465%2C3.7049014">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.5757542%2C3.7059099%3B49.5808465%2C3.7049014</a>
+<a href="https://graphhopper.com/maps/?point=49.5757542%2C3.7059099&amp;point=49.5808465%2C3.7049014">https://graphhopper.com/maps/?point=49.5757542%2C3.7059099&amp;point=49.5808465%2C3.7049014</a>
+<a href="http://www.google.com/maps/dir/49.5757542,3.7059099/49.5808465,3.7049014">http://www.google.com/maps/dir/49.5757542,3.7059099/49.5808465,3.7049014</a>
+Route status : 17, distance : 1200, duration : 1.29872298241
+dbus result mismatch [ got 1200&gt;9000</p>
+
+<p>Testing roundabout_bypass.yaml : 50.9532477,3.5647828 to 50.9534572,3.5683341
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9532477%2C3.5647828%3B50.9534572%2C3.5683341">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=50.9532477%2C3.5647828%3B50.9534572%2C3.5683341</a>
+<a href="https://graphhopper.com/maps/?point=50.9532477%2C3.5647828&amp;point=50.9534572%2C3.5683341">https://graphhopper.com/maps/?point=50.9532477%2C3.5647828&amp;point=50.9534572%2C3.5683341</a>
+<a href="http://www.google.com/maps/dir/50.9532477,3.5647828/50.9534572,3.5683341">http://www.google.com/maps/dir/50.9532477,3.5647828/50.9534572,3.5683341</a>
+Route status : 17, distance : 343, duration : 1.20762586594
+dbus result mismatch [ got 343&lt;330</p>
+
+<p>Testing roundabout_street_4.yaml : 48.32473,12.448614 to 48.1337,11.6702
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.32473%2C12.448614%3B48.1337%2C11.6702">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=48.32473%2C12.448614%3B48.1337%2C11.6702</a>
+<a href="https://graphhopper.com/maps/?point=48.32473%2C12.448614&amp;point=48.1337%2C11.6702">https://graphhopper.com/maps/?point=48.32473%2C12.448614&amp;point=48.1337%2C11.6702</a>
+<a href="http://www.google.com/maps/dir/48.32473,12.448614/48.1337,11.6702">http://www.google.com/maps/dir/48.32473,12.448614/48.1337,11.6702</a>
+Route status : 17, distance : 77349, duration : 1.27346611023</p>
+
+<p>Testing street_4_detour.yaml : 49.4424244485,1.09846007311 to 45.9103168093,-1.26466262887
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4424244485%2C1.09846007311%3B45.9103168093%2C-1.26466262887">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=49.4424244485%2C1.09846007311%3B45.9103168093%2C-1.26466262887</a>
+<a href="https://graphhopper.com/maps/?point=49.4424244485%2C1.09846007311&amp;point=45.9103168093%2C-1.26466262887">https://graphhopper.com/maps/?point=49.4424244485%2C1.09846007311&amp;point=45.9103168093%2C-1.26466262887</a>
+<a href="http://www.google.com/maps/dir/49.4424244485,1.09846007311/45.9103168093,-1.26466262887">http://www.google.com/maps/dir/49.4424244485,1.09846007311/45.9103168093,-1.26466262887</a>
+Route status : 17, distance : 714668, duration : 3.66050410271
+dbus result mismatch [ got 714668&lt;550000</p>
+
+<p>Testing weisenfels_highway_entry.yaml : 51.3704027,11.9215424 to 51.204014,11.966423
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.3704027%2C11.9215424%3B51.204014%2C11.966423">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=51.3704027%2C11.9215424%3B51.204014%2C11.966423</a>
+<a href="https://graphhopper.com/maps/?point=51.3704027%2C11.9215424&amp;point=51.204014%2C11.966423">https://graphhopper.com/maps/?point=51.3704027%2C11.9215424&amp;point=51.204014%2C11.966423</a>
+<a href="http://www.google.com/maps/dir/51.3704027,11.9215424/51.204014,11.966423">http://www.google.com/maps/dir/51.3704027,11.9215424/51.204014,11.966423</a>
+Route status : 17, distance : 20843, duration : 6.12550401688
+Forcing zoom to 32
+Setting the view center to 11.912739,51.370095
+dbus result mismatch [ got 17==33</p>
+
+<p>Testing z_route_66.yaml : 41.878245,-87.624432 to 34.010959,-118.495381
+<a href="http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=41.878245%2C-87.624432%3B34.010959%2C-118.495381">http://www.openstreetmap.org/directions?engine=osrm_car&amp;route=41.878245%2C-87.624432%3B34.010959%2C-118.495381</a>
+<a href="https://graphhopper.com/maps/?point=41.878245%2C-87.624432&amp;point=34.010959%2C-118.495381">https://graphhopper.com/maps/?point=41.878245%2C-87.624432&amp;point=34.010959%2C-118.495381</a>
+<a href="http://www.google.com/maps/dir/41.878245,-87.624432/34.010959,-118.495381">http://www.google.com/maps/dir/41.878245,-87.624432/34.010959,-118.495381</a>
+Route status : 17, distance : 3289780, duration : 6.94919991493</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
