@@ -1,7 +1,7 @@
 dependencies:
   pre:
     - "[ -d ~/maps ] || mkdir ~/maps"
-    - wget -c -O ~/maps/north-america.bin https://circle-artifacts.com/gh/navit-gps/maptool/37/artifacts/0/tmp/circle-artifacts.gKRmOfb/north-america.bin
+    - wget -c -O ~/maps/europe-belgium.bin https://circle-artifacts.com/gh/navit-gps/maptool/98/artifacts/0/tmp/circle-artifacts.srRUrXI/europe-belgium.bin
     - sudo apt-get update > /dev/null 2> /dev/null
     - sudo apt-get install cmake
     - sudo apt-get install libpng12-dev 
