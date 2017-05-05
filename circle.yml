@@ -1,7 +1,8 @@
 dependencies:
   pre:
     - "[ -d ~/maps ] || mkdir ~/maps"
-    - wget -c -O ~/maps/europe-belgium.bin https://circle-artifacts.com/gh/navit-gps/maptool/98/artifacts/0/tmp/circle-artifacts.srRUrXI/europe-belgium.bin
+#    - wget -c -O ~/maps/europe-belgium.bin https://circle-artifacts.com/gh/navit-gps/maptool/98/artifacts/0/tmp/circle-artifacts.srRUrXI/europe-belgium.bin
+    - wget -c -O ~/maps/europe-belgium.bin https://769-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.ZNELIQ8/europe-belgium.bin
 #    - wget -c -O ~/maps/europe-france.bin https://circle-artifacts.com/gh/navit-gps/maptool/108/artifacts/0/tmp/circle-artifacts.pM8yZpL/europe-france.bin
     - wget -c -O ~/maps/europe-france.bin https://767-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.sJikzpP/europe-france.bin
     - sudo apt-get update > /dev/null 2> /dev/null
