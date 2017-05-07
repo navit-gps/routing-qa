@@ -6,8 +6,7 @@ dependencies:
     - wget -c -O ~/maps/us-west.bin https://772-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.9SaS25u/us-west.bin
     - sudo apt-get update > /dev/null 2> /dev/null
     - sudo apt-get install cmake
-    - sudo apt-get install libpng12-dev 
-  #  - sudo apt-get install libgtk2.0-dev 
+    - sudo apt-get install libpng12-dev
     - sudo apt-get install librsvg2-bin 
     - sudo apt-get install libfreetype6-dev
     - sudo apt-get install libdbus-glib-1-dev
