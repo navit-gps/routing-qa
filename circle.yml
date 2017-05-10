@@ -4,6 +4,7 @@ dependencies:
     - wget -c -O ~/maps/europe-belgium.bin https://769-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.ZNELIQ8/europe-belgium.bin
     - wget -c -O ~/maps/europe-france.bin https://767-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.sJikzpP/europe-france.bin
     - wget -c -O ~/maps/us-west.bin https://772-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.9SaS25u/us-west.bin
+    - wget -c -O ~/maps/europe-netherlands.bin https://773-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.NHqsvHm/europe-netherlands.bin
     - sudo apt-get update > /dev/null 2> /dev/null
     - sudo apt-get install cmake
     - sudo apt-get install libpng12-dev 
