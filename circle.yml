@@ -29,19 +29,20 @@ dependencies:
     - make -j32:
         pwd: bin
     - GEOFAB=$( echo $MAP | sed -e 's@europe-@europe/@' ); wget -c -O  ~/${MAP}-latest.osm.pbf http://download.geofabrik.de/${GEOFAB}-latest.osm.pbf
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s1 -e1 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin:
+    - ls -la
+    - ./bin/navit/maptool/maptool -P  -6 -s1 -e1 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin:
         timeout: 7200
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s2 -e2 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s3 -e3 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s4 -e4 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s5 -e5 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s6 -e6 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin:
+    - ./bin/navit/maptool/maptool -P  -6 -s2 -e2 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./bin/navit/maptool/maptool -P  -6 -s3 -e3 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./bin/navit/maptool/maptool -P  -6 -s4 -e4 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./bin/navit/maptool/maptool -P  -6 -s5 -e5 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./bin/navit/maptool/maptool -P  -6 -s6 -e6 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin:
        timeout: 7200
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s7 -e7 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s8 -e8 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s9 -e9 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s10 -e10 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
-    - ./navit/bin/navit/maptool/maptool -P  -6 -s11 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./bin/navit/maptool/maptool -P  -6 -s7 -e7 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./bin/navit/maptool/maptool -P  -6 -s8 -e8 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./bin/navit/maptool/maptool -P  -6 -s9 -e9 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./bin/navit/maptool/maptool -P  -6 -s10 -e10 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./bin/navit/maptool/maptool -P  -6 -s11 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
     - ls -la $CIRCLE_ARTIFACTS
 test:
   post:
