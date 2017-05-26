@@ -1,7 +1,7 @@
 machine:
   environment:
     MAPCODE: 170526
-MAP: europe-netherlands
+    MAP: europe-netherlands
 
 dependencies:
   pre:
