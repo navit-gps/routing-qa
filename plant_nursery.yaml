@@ -1,0 +1,13 @@
+# demo of landuse plant_nursery
+from:
+  lat: 52.4803
+  lng: 4.8328
+to:
+  lat: 52.4819
+  lng: 4.8215
+
+success:
+    source: 'dbus'
+    item: 'distance'
+    value: 540
+operator: '<'
