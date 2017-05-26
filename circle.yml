@@ -28,10 +28,10 @@ dependencies:
         pwd: bin
     - make -j32:
         pwd: bin
-     - GEOFAB=$( echo $MAP | sed -e 's@europe-@europe/@' ); wget -c -O  ~/${MAP}-latest.osm.pbf http://download.geofabrik.de/${GEOFAB}-latest.osm.pbf
+    - GEOFAB=$( echo $MAP | sed -e 's@europe-@europe/@' ); wget -c -O  ~/${MAP}-latest.osm.pbf http://download.geofabrik.de/${GEOFAB}-latest.osm.pbf
   cache_directories:
     - "~/assets/"
-     - ./navit/bin/navit/maptool/maptool -P  -6 -s1 -e1 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin:
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s1 -e1 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin:
         timeout: 7200
     - ./navit/bin/navit/maptool/maptool -P  -6 -s2 -e2 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
     - ./navit/bin/navit/maptool/maptool -P  -6 -s3 -e3 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
