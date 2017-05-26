@@ -1,10 +1,15 @@
+machine:
+  environment:
+    MAPCODE: 170526
+MAP: europe-netherlands
+
 dependencies:
   pre:
     - "[ -d ~/maps ] || mkdir ~/maps"
-    - wget -c -O ~/maps/europe-belgium.bin https://769-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.ZNELIQ8/europe-belgium.bin
-    - wget -c -O ~/maps/europe-france.bin https://767-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.sJikzpP/europe-france.bin
-    - wget -c -O ~/maps/us-west.bin https://772-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.9SaS25u/us-west.bin
-    - wget -c -O ~/maps/europe-netherlands.bin https://773-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.NHqsvHm/europe-netherlands.bin
+ #   - wget -c -O ~/maps/europe-belgium.bin https://769-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.ZNELIQ8/europe-belgium.bin
+ #   - wget -c -O ~/maps/europe-france.bin https://767-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.sJikzpP/europe-france.bin
+ #   - wget -c -O ~/maps/us-west.bin https://772-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.9SaS25u/us-west.bin
+ #   - wget -c -O ~/maps/europe-netherlands.bin https://773-32646075-gh.circle-artifacts.com/0/tmp/circle-artifacts.NHqsvHm/europe-netherlands.bin
     - sudo apt-get update > /dev/null 2> /dev/null
     - sudo apt-get install cmake
     - sudo apt-get install libpng12-dev 
@@ -23,8 +28,23 @@ dependencies:
         pwd: bin
     - make -j32:
         pwd: bin
+     - GEOFAB=$( echo $MAP | sed -e 's@europe-@europe/@' ); wget -c -O  ~/${MAP}-latest.osm.pbf http://download.geofabrik.de/${GEOFAB}-latest.osm.pbf
   cache_directories:
     - "~/assets/"
+     - ./navit/bin/navit/maptool/maptool -P  -6 -s1 -e1 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin:
+        timeout: 7200
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s2 -e2 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s3 -e3 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s4 -e4 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s5 -e5 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s6 -e6 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin:
+       timeout: 7200
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s7 -e7 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s8 -e8 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s9 -e9 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s10 -e10 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ./navit/bin/navit/maptool/maptool -P  -6 -s11 -i ~/${MAP}-latest.osm.pbf $CIRCLE_ARTIFACTS/${MAP}.bin
+    - ls -la $CIRCLE_ARTIFACTS
 test:
   post:
     - sed -i -e 's@name="Local GPS" profilename="car" enabled="yes" active="1"@name="Local GPS" profilename="car" enabled="no" active="0"@' navit.xml:
@@ -52,7 +72,7 @@ test:
         pwd: bin/navit/
     - echo '<map type="binfile" data="~/maps/europe-lithuania.bin" />' > maps/lithuania.xml:
         pwd: bin/navit/
-    - echo '<map type="binfile" data="~/maps/europe-netherlands.bin" />' > maps/netherlands.xml:
+    - echo '<map type="binfile" data="$CIRCLE_ARTIFACTS/${MAP}.bin" />' > maps/netherlands.xml:
         pwd: bin/navit/
     - echo '<map type="binfile" data="~/maps/europe-poland.bin" />' > maps/poland.xml:
         pwd: bin/navit/
@@ -75,12 +95,4 @@ test:
     - python test.py $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS "imperial"
     - dbus-send  --print-reply --session --dest=org.navit_project.navit /org/navit_project/navit/default_navit org.navit_project.navit.navit.quit
 
-deployment:
-  publish_tests_results:
-    branch: gh-tests
-    owner: navit-gps
-    commands:
-      - git checkout -b gh-pages
-      - cp $CIRCLE_ARTIFACTS/test.md index.md
-      - git add index.md
-      - git push
+
