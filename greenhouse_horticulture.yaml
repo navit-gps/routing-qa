@@ -1,0 +1,13 @@
+# demo of landuse greenhouse_horticulture
+from:
+  lat: 51.9862
+  lng: 4.1305
+to:
+  lat: 51.9882
+  lng: 4.1423
+
+success:
+    source: 'dbus'
+    item: 'distance'
+    value: 540
+operator: '<'
