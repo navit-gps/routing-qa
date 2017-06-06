@@ -1,0 +1,13 @@
+# demo of landuse depot
+from:
+  lat: 53.19677
+  lng: 5.78162
+to:
+  lat: 53.19701
+  lng: 5.78269
+
+success:
+    source: 'dbus'
+    item: 'distance'
+    value: 540
+operator: '<'
